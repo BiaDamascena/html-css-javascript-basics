@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Estrutura Base</title>
+    <meta charset="utf-8"> 
+    <meta name="author" content="Bianca">
+    <meta name="desccription" content="Documento">
+    <meta name="keywords" content="html, tec">
+
+
+    <style>
+#estrutura1, #estrutura2 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 10px;
+}
+
+#estrutura1{
+box-sizing: border-box;
+}
+
+#estrutura2{
+
+}
+
+#container {
+    width: 350px;
+    background-color: gray;
+    float: none;
+    overflow: auto;
+    
+}
+#container div {
+    border-style: solid;
+    border-color: red;
+
+}
+#div1{
+    float: none;
+    
+}
+
+#div2{
+    float: left; 
+}
+
+#div3{
+    
+    float: right;
+    clear: left;
+}
+
+.um{
+background-color: red;
+width: 100%;
+height: 80px;
+padding: 10px;
+}
+
+.dois{
+background-color: orange;
+width: 80%;
+height: 50px;
+padding: 10px;
+}
+
+.tres{  
+background-color: yellow;
+width: 25px;
+height: 25px;
+}
+    </style>
+</head>
+    <body>
+        <div id="estrutura1">
+        <p>Estrutura Basica</p>
+    </div>
+        <div id="estrutura2">
+        <p>Estrutura basica</p>
+    </div>
+<br>
+
+<div id="container">
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+</div>
+<br>
+<div class="wrapper">
+    <div class="um">1
+        <div class="dois">2
+            <div class="tres">3</div>
+        </div>
+    </div>
+</div>
+
+   </body>
+</html>
+
