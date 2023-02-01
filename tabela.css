@@ -1,9 +1,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    
 
 }
-
 
 caption{
     padding: 20px;
@@ -14,8 +14,8 @@ caption{
 }
 
 .tableall{
-    width: 60%;
-    margin:0px;
+    width: 250px;
+    margin:auto;
     border-collapse: collapse;
     border-color: rgb(68, 68, 251);
     border-style: solid;
@@ -61,3 +61,7 @@ caption{
    
 }
 
+tfoot td{
+    text-align: center;
+    padding: 10px;
+}

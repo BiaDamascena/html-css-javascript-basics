@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8"> 
+    <meta name="author" content="Bianca">
+    <meta name="desccription" content="Documento">
+    <meta name="keywords" content="html, tec">
+
+<style>
+
+.form{
+    width: 200px;
+    margin: 60px auto;
+    background-color: rgba(137, 43, 226, 0.39);
+    padding: 25px;
+    font-family: sans-serif;
+     
+    
+}
+
+
+legend{
+    text-align: center;
+    
+}
+#email, #senha{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: none;
+    padding: 5px;
+}
+#email:focus, #senha:focus{
+    outline: none;
+    background-color: rgb(255, 240, 255);
+    border-style: solid;
+    border-color: rgb(49, 2, 71);
+    border-width: 2px;
+
+}
+
+#botao{
+    display: block;
+    margin: auto;
+    background-color: rgb(154, 75, 228);
+    border: none;
+    padding: 5px 10px;
+
+}
+
+fieldset label{
+    text-align: center;
+    display: block;
+}
+
+</style>
+
+
+
+
+</head>
+    <body>
+        <form action="#" method="post">
+           <fieldset class="form">
+                 <legend> Login</legend> 
+
+                 <label for="email">Digite seu email</label>
+                 <input type="text" name="email" id="email" autofocus>
+
+                 <label for="senha"> Digite sua senha</label>
+                 <input type="password" name="pass" id="senha">
+
+                 <input type="submit" value="Login" id="botao">
+
+           </fieldset>
+        </form>
+
+   </body>
+</html>
