@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Inputs formulario</title>
+    <meta charset="utf-8"> 
+    <meta name="author" content="Bianca">
+    <meta name="desccription" content="Documento">
+    <meta name="keywords" content="html, tec">
+</head>
+    <body>
+        <form action="#" method="POST">
+            <!--o atributo é oq vai dentro da tag e serve para adicionar mais informação á tag-->
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text"  id="name">
+<br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+<br>
+                <label for="age">Age</label>
+                <input type=number min=0 max=101 id="age">
+                <!--com o atributo min e max é possivel estabelecer onde começa e termina as opçoes-->
+<br>
+                <label for="birthdate">Birth Date</label>
+                <input type="date" min="1989-01-01" id="birthdate">
+                <!--to apply minimum or miximun age -->
+                
+<br>
+                <p>Sexo</p>
+                
+                <label>Feminino<input type="radio" name="sexo"></label>
+                <!--para que o browser entenda que vc só pode selecionar uma das opções é necessario o atributo name="sexo"-->
+                <!--The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted-->
+                <label for="M">Masculino</label>
+                <input type="radio" name="sexo" id="M">
+                <!--para que vc consiga selecionar a opção pelo texto (deixar mais acessivel) 
+                    vc pode tanto adicionar o atributo for="" mais id-="" ou envolver o input com a tag label-->
+<br>
+                <label>Estado</label>
+
+                <select>
+                    <option value=""> Selecione uma opção</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="MT">Mato Grosso</option>
+                </select>
+<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de Interesse</legend>
+                <label><input type="checkbox" name="css" value="css">CSS</label>
+                <label><input type="checkbox" name="css" value="html">HTML</label>
+                <label><input type="checkbox" name="css" value="js">Javascript</label>
+<br>
+               <!-- OUTROS TIPOS DE INPUTS
+                <input type=range min="0" max="20" step="5">
+                <input type="time">
+                <input type="color">
+                -->
+
+             </fieldset>
+
+             <fieldset>
+                <legend>Mensagem</legend>
+                <textarea name="msg" cols="70" rows="20" maxlength="20" placeholder="Digite seu texto"></textarea>
+                
+<br>
+                <textarea name="msg" cols="70" rows="20" readonly>Contrato de utilização de dados ajakdjsdjandkjandkjankjandkn
+                </textarea>
+<br>
+                <label><input type="checkbox" name="agree">Li e Concordo</label>
+<br>
+                <input type="submit" value="Enviar">
+                <input type="button" value="button">
+                <input type="reset" value="reset">
+             </fieldset>
+        </form>
+             
+   </body>
+</html>
